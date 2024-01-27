@@ -1,4 +1,5 @@
-FROM openjdk:17
+FROM openjdk:17-jdk
+WORKDIR /app
+COPY target/todo-app.jar /app/todo-app.jar
 EXPOSE 8080
-ADD target/todo-app.jar todo-app.jar
-ENTRYPOINT ["java","-jar","/todo-app.jar"]
+CMD ["java", "-jar", "todo-app.jar"]

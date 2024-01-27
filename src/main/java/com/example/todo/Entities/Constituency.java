@@ -10,6 +10,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @Entity(name = "constituency")
+@Table
 public class Constituency {
 
     @Id
